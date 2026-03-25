@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KLOSET — Your AI Stylist</title>
-  <meta name="description" content="KLOSET learns your style, knows your wardrobe and dresses you with intention — every single day." />
+  <title>KLOSET — Style what you own.</title>
+  <meta name="description" content="KLOSET makes getting dressed effortless. Your wardrobe, reimagined." />
   <link rel="icon" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,6 +56,12 @@
     .hero-scroll { font-size: 13px; color: rgba(255,255,255,0.38); text-decoration: none; transition: color 0.2s; letter-spacing: 0.3px; }
     .hero-scroll:hover { color: rgba(255,255,255,0.65); }
 
+    /* ── Problem ── */
+    .problem { background: var(--warm-white); padding: 100px 48px; text-align: center; }
+    .problem-stat { font-family: 'Playfair Display', serif; font-size: clamp(22px, 3.5vw, 36px); font-weight: 700; color: var(--black); margin-bottom: 16px; line-height: 1.3; }
+    .problem-body { font-size: 17px; font-weight: 300; color: #5A5A5A; line-height: 1.7; max-width: 540px; margin: 0 auto 12px; }
+    .problem-note { font-size: 15px; font-weight: 300; color: var(--mid); }
+
     /* ── Features ── */
     .features { background: var(--ivory); padding: 100px 48px; }
     .features-header { text-align: center; max-width: 560px; margin: 0 auto 64px; }
@@ -69,16 +75,36 @@
     .feature-title { font-size: 17px; font-weight: 600; color: var(--black); margin-bottom: 10px; }
     .feature-body { font-size: 14px; font-weight: 300; color: #5A5A5A; line-height: 1.75; }
 
+    /* ── How it works ── */
+    .how { background: var(--warm-white); padding: 100px 48px; }
+    .how-grid { max-width: 840px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }
+    .how-step { }
+    .how-num { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; color: var(--gold); margin-bottom: 12px; }
+    .how-title { font-size: 17px; font-weight: 600; color: var(--black); margin-bottom: 8px; }
+    .how-body { font-size: 14px; font-weight: 300; color: #5A5A5A; line-height: 1.75; }
+
+    /* ── Value ── */
+    .value { background: var(--black); padding: 100px 48px; text-align: center; }
+    .value-headline { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(28px, 4vw, 48px); color: #fff; font-weight: 400; margin-bottom: 48px; line-height: 1.2; }
+    .value-list { list-style: none; max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+    .value-list li { display: flex; align-items: center; gap: 14px; font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.75); text-align: left; }
+    .value-list li::before { content: '—'; color: var(--gold); font-family: 'Playfair Display', serif; font-size: 20px; flex-shrink: 0; }
+
     /* ── Quote ── */
-    .quote { background: var(--black); padding: 96px 48px; text-align: center; }
+    .quote { background: var(--ivory); padding: 96px 48px; text-align: center; }
     .quote-logo { width: 56px; height: 56px; object-fit: contain; border-radius: 12px; margin: 0 auto 28px; display: block; }
-    .quote-text { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(28px, 4vw, 52px); color: #fff; font-weight: 400; margin-bottom: 20px; line-height: 1.2; }
+    .quote-text { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(28px, 4vw, 52px); color: var(--black); font-weight: 400; margin-bottom: 20px; line-height: 1.2; }
     .quote-attr { font-size: 12px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); }
+
+    /* ── Positioning ── */
+    .positioning { background: var(--warm-white); padding: 96px 48px; text-align: center; }
+    .positioning-headline { font-family: 'Playfair Display', serif; font-size: clamp(22px, 3vw, 32px); font-weight: 700; color: var(--black); margin-bottom: 16px; line-height: 1.3; max-width: 640px; margin-left: auto; margin-right: auto; }
+    .positioning-body { font-size: 16px; font-weight: 300; color: #5A5A5A; line-height: 1.8; max-width: 580px; margin: 0 auto; }
 
     /* ── CTA ── */
     .cta { background: var(--ivory); padding: 96px 48px; text-align: center; }
-    .cta-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 44px); font-weight: 700; color: var(--black); margin-bottom: 14px; }
-    .cta-sub { font-size: 15px; font-weight: 300; color: var(--mid); margin-bottom: 40px; }
+    .cta-eyebrow { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(20px, 3vw, 30px); font-weight: 400; color: var(--black); margin-bottom: 12px; }
+    .cta-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 44px); font-weight: 700; color: var(--black); margin-bottom: 40px; }
     .store-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
     .store-btn { display: flex; align-items: center; gap: 12px; background: var(--black); color: #fff; text-decoration: none; border-radius: 14px; padding: 14px 26px; transition: opacity 0.2s; }
     .store-btn:hover { opacity: 0.8; }
@@ -97,13 +123,13 @@
     .footer-copy { font-size: 13px; color: rgba(255,255,255,0.22); }
 
     /* ── Responsive ── */
-    @media (max-width: 900px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 900px) { .features-grid { grid-template-columns: repeat(2, 1fr); } .how-grid { grid-template-columns: 1fr; gap: 32px; } }
     @media (max-width: 600px) {
       nav { padding: 16px 20px; }
       .nav-links a:not(.nav-cta) { display: none; }
       .features { padding: 72px 20px; }
       .features-grid { grid-template-columns: 1fr; }
-      .quote, .cta { padding: 72px 20px; }
+      .problem, .how, .value, .positioning, .quote, .cta { padding: 72px 20px; }
       footer { padding: 40px 20px; }
     }
   </style>
@@ -117,7 +143,7 @@
     </a>
     <div class="nav-links">
       <a href="#features">Features</a>
-      <a href="https://apps.apple.com" class="nav-cta">Open Your Kloset</a>
+      <a href="https://apps.apple.com" class="nav-cta">Open your Kloset</a>
     </div>
   </nav>
 
@@ -129,69 +155,119 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <img src="kloset_icon_300ppi.png" alt="KLOSET" class="hero-logo" />
-      <p class="hero-kicker">AI-Powered Wardrobe</p>
-      <h1 class="hero-headline">Your wardrobe.<br>Reimagined.</h1>
-      <p class="hero-sub">AI-powered styling for every version of you</p>
-      <p class="hero-body">KLOSET learns your style, knows your wardrobe and dresses you with intention — every single day.</p>
+      <p class="hero-kicker">Now available on iOS</p>
+      <h1 class="hero-headline">Style what you own.</h1>
+      <p class="hero-sub">Your wardrobe, reimagined.</p>
+      <p class="hero-body">KLOSET turns your wardrobe into a smart styling system — creating outfits for your day, your mood, and your life.</p>
       <div class="hero-actions">
-        <a href="https://apps.apple.com" class="hero-cta">Open Your Kloset</a>
+        <a href="https://apps.apple.com" class="hero-cta">Get started</a>
         <a href="#features" class="hero-scroll">See how it works ↓</a>
       </div>
     </div>
+  </section>
+
+  <!-- ── Problem ── -->
+  <section class="problem">
+    <p class="problem-stat">Most people wear 20% of their wardrobe, 80% of the time.</p>
+    <p class="problem-body">KLOSET helps you rediscover everything you already own.</p>
+    <p class="problem-note">A simpler, smarter way to get dressed every day.</p>
   </section>
 
   <!-- ── Features ── -->
   <section class="features" id="features">
     <div class="features-header">
       <p class="section-kicker">Everything you need</p>
-      <h2 class="section-title">Style, made effortless.</h2>
-      <p class="section-sub">Six powerful tools. One beautifully simple app.</p>
+      <h2 class="section-title">Never wonder what to wear again.</h2>
+      <p class="section-sub">Plan outfits in seconds. Discover combinations you never thought of.</p>
     </div>
     <div class="features-grid">
       <div class="feature-card">
         <span class="feature-dash">—</span>
-        <h3 class="feature-title">Your AI Stylist</h3>
-        <p class="feature-body">Get outfit recommendations for any occasion, mood or weather. KLOSET knows your wardrobe better than you do.</p>
+        <h3 class="feature-title">Your Kloset</h3>
+        <p class="feature-body">Everything you own, beautifully organised. Every item catalogued, tagged and ready to wear.</p>
       </div>
       <div class="feature-card">
         <span class="feature-dash">—</span>
-        <h3 class="feature-title">Know Your Wardrobe</h3>
-        <p class="feature-body">Every item catalogued, tagged and ready to wear. No more staring at a full wardrobe with nothing to wear.</p>
+        <h3 class="feature-title">Get styled</h3>
+        <p class="feature-body">Looks created from what you already have. Tell KLOSET what you need and see the outfit come together instantly.</p>
       </div>
       <div class="feature-card">
         <span class="feature-dash">—</span>
-        <h3 class="feature-title">Style Intelligence</h3>
-        <p class="feature-body">The more you use KLOSET, the better it knows you. Your taste, your lifestyle, your mood — understood.</p>
+        <h3 class="feature-title">Plan ahead</h3>
+        <p class="feature-body">Plan what to wear — wherever you're going. Pack smarter, never panic again.</p>
       </div>
       <div class="feature-card">
         <span class="feature-dash">—</span>
-        <h3 class="feature-title">Plan Ahead</h3>
-        <p class="feature-body">Pack smarter, dress better, never panic again. AI packing lists built from what you actually own.</p>
+        <h3 class="feature-title">Dress for the weather</h3>
+        <p class="feature-body">Outfits that work for today's conditions, built from what you actually own.</p>
       </div>
       <div class="feature-card">
         <span class="feature-dash">—</span>
-        <h3 class="feature-title">Shop with Purpose</h3>
+        <h3 class="feature-title">Shop smarter</h3>
         <p class="feature-body">Add to your wardrobe intentionally, not impulsively. Photograph it in the shop. KLOSET tells you if it belongs.</p>
       </div>
       <div class="feature-card">
         <span class="feature-dash">—</span>
-        <h3 class="feature-title">Your Style DNA</h3>
-        <p class="feature-body">Discover the style personality that's uniquely yours. Built from your choices, refined by your taste.</p>
+        <h3 class="feature-title">Discover &amp; evolve</h3>
+        <p class="feature-body">Discover what's next for your style. Built from your choices, refined by your taste.</p>
       </div>
     </div>
+  </section>
+
+  <!-- ── How it works ── -->
+  <section class="how">
+    <div class="features-header">
+      <p class="section-kicker">How it works</p>
+      <h2 class="section-title">Three steps to a better wardrobe.</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-step">
+        <p class="how-num">01</p>
+        <h3 class="how-title">Build your Kloset</h3>
+        <p class="how-body">Upload your clothes in seconds.</p>
+      </div>
+      <div class="how-step">
+        <p class="how-num">02</p>
+        <h3 class="how-title">Get styled</h3>
+        <p class="how-body">Tell KLOSET what you need.</p>
+      </div>
+      <div class="how-step">
+        <p class="how-num">03</p>
+        <h3 class="how-title">See the look</h3>
+        <p class="how-body">See your outfits come together instantly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Value ── -->
+  <section class="value">
+    <p class="value-headline">"Never wonder what to wear again."</p>
+    <ul class="value-list">
+      <li>Plan outfits in seconds</li>
+      <li>Discover combinations you never thought of</li>
+      <li>Dress for the weather automatically</li>
+      <li>See outfits before you wear them</li>
+      <li>Shop smarter, not more</li>
+    </ul>
   </section>
 
   <!-- ── Quote strip ── -->
   <section class="quote">
     <img src="icon_black.png" alt="KLOSET" class="quote-logo" />
-    <p class="quote-text">"Dress with intention."</p>
-    <p class="quote-attr">KLOSET — Your AI Stylist</p>
+    <p class="quote-text">"Your wardrobe is already enough."</p>
+    <p class="quote-attr">KLOSET — Style what you own.</p>
+  </section>
+
+  <!-- ── Positioning ── -->
+  <section class="positioning">
+    <h2 class="positioning-headline">KLOSET is more than a wardrobe app. It's a decision engine for what to wear.</h2>
+    <p class="positioning-body">Designed to reduce decision fatigue, make better use of what you own, and help you feel more confident in your style.</p>
   </section>
 
   <!-- ── App Store CTA ── -->
   <section class="cta">
-    <h2 class="cta-title">Start wearing your wardrobe.</h2>
-    <p class="cta-sub">Available on iOS. Android coming soon.</p>
+    <p class="cta-eyebrow">Your wardrobe is already enough.</p>
+    <h2 class="cta-title">KLOSET just makes it work better.</h2>
     <div class="store-buttons">
       <a href="https://apps.apple.com" class="store-btn">
         <span class="store-btn-icon"></span>
@@ -221,7 +297,7 @@
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
     </div>
-    <p class="footer-copy">&copy; 2025 KLOSET. Dress with intention.</p>
+    <p class="footer-copy">&copy; 2025 KLOSET. Style what you own.</p>
   </footer>
 
 </body>
