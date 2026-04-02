@@ -45,11 +45,12 @@
     .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
     .hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.58); z-index: 1; }
     .hero-content { position: relative; z-index: 2; max-width: 760px; }
-    .hero-logo { width: 140px; height: 140px; object-fit: contain; border-radius: 26px; margin-bottom: 36px; box-shadow: 0 24px 64px rgba(0,0,0,0.5); }
+    .hero-logo { width: 120px; height: 120px; object-fit: contain; border-radius: 26px; margin-bottom: 12px; box-shadow: 0 24px 64px rgba(0,0,0,0.5); }
+    .hero-logo-wordmark { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; letter-spacing: 10px; color: #fff; margin-bottom: 28px; display: block; }
     .hero-kicker { font-size: 11px; font-weight: 600; letter-spacing: 3px; color: var(--gold); margin-bottom: 20px; }
-    .hero-headline { font-family: 'Playfair Display', serif; font-size: clamp(44px, 7vw, 88px); color: #fff; font-weight: 700; line-height: 1.08; margin-bottom: 22px; }
-    .hero-sub { font-size: 18px; font-weight: 400; color: rgba(255,255,255,0.75); margin-bottom: 14px; }
-    .hero-body { font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.65); line-height: 1.85; margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
+    .hero-headline { font-family: 'Playfair Display', serif; font-size: clamp(44px, 7vw, 88px); color: #fff; font-weight: 700; line-height: 1.08; margin-bottom: 22px; white-space: nowrap; }
+    .hero-sub { font-size: 24px; font-weight: 400; color: #fff; margin-bottom: 16px; }
+    .hero-body { font-size: 17px; font-weight: 400; color: rgba(255,255,255,0.9); line-height: 1.85; margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
     .hero-actions { display: flex; flex-direction: column; align-items: center; gap: 16px; }
     .hero-cta { display: inline-block; background: #fff; color: #000; font-size: 15px; font-weight: 600; letter-spacing: 0.3px; text-decoration: none; padding: 16px 40px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
     .hero-cta:hover { background: var(--ivory); transform: translateY(-1px); }
@@ -130,11 +131,11 @@
       transition: border-color 0.2s;
     }
     .contact-form input::placeholder,
-    .contact-form textarea::placeholder { color: rgba(255,255,255,0.35); }
+    .contact-form textarea::placeholder { color: rgba(255,255,255,0.6); }
     .contact-form input:focus,
     .contact-form select:focus,
     .contact-form textarea:focus { border-color: var(--gold); }
-    .contact-form select { color: rgba(255,255,255,0.65); appearance: none; cursor: pointer; }
+    .contact-form select { color: rgba(255,255,255,0.8); appearance: none; cursor: pointer; }
     .contact-form select option { background: #111; color: #fff; }
     .contact-form textarea { resize: vertical; min-height: 120px; }
     .contact-submit {
@@ -156,7 +157,7 @@
     .footer-links { display: flex; gap: 28px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
     .footer-links a { font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: #fff; }
-    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.4); }
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.8); }
 
     /* ── Responsive ── */
     @media (max-width: 900px) {
@@ -194,6 +195,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <img src="assets/kloset_transparent_white.png" alt="KLOSET" class="hero-logo" />
+      <span class="hero-logo-wordmark">KLOSET</span>
       <p class="hero-kicker">NOW AVAILABLE ON iOS</p>
       <h1 class="hero-headline">Style what you own.</h1>
       <p class="hero-sub">Your wardrobe, reimagined.</p>
@@ -297,7 +299,7 @@
 
   <!-- ── Value ── -->
   <section class="value">
-    <p class="value-headline">"Never wonder what to wear again."</p>
+    <p class="value-headline" style="white-space: nowrap;">Never wonder what to wear again.</p>
     <ul class="value-list">
       <li>Plan outfits in seconds</li>
       <li>Discover combinations you never thought of</li>
@@ -310,7 +312,7 @@
   <!-- ── Quote strip ── -->
   <section class="quote">
     <img src="assets/kloset_transparent_white.png" alt="KLOSET" class="quote-logo" />
-    <p class="quote-text">"Your wardrobe is already enough."</p>
+    <p class="quote-text">Your wardrobe is already enough.</p>
     <p class="quote-attr">KLOSET — Style what you own.</p>
   </section>
 
@@ -347,7 +349,7 @@
     <div class="contact-inner">
       <p class="section-kicker">Get in touch</p>
       <h2 class="contact-title">We'd love to hear from you.</h2>
-      <p class="contact-sub">Whether you're press, a retailer, an investor, or just want to say hello — drop us a message and we'll get back to you.</p>
+      <p class="contact-sub">Whether you're press, a retailer, an investor, or would just like to say hello — drop us a message and we'll get back to you.</p>
       <form class="contact-form" action="https://formspree.io/f/meeplobv" method="POST" id="contactForm">
         <input type="text" name="name" placeholder="Your name" required />
         <input type="email" name="email" placeholder="Your email" required />
@@ -380,7 +382,7 @@
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
     </div>
-    <p class="footer-copy">&copy; 2025 KLOSET. Style what you own.</p>
+    <p class="footer-copy">&copy; 2026 KLOSET. Style what you own.</p>
   </footer>
 
   <script>
